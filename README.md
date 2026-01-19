@@ -44,7 +44,6 @@ Primary sources from Geoffrey Huntley, the creator of the Ralph technique.
 - [Don't Waste Your Back Pressure](https://ghuntley.com/pressure/) - Technical deep-dive on backpressure — the art of rejecting invalid generations without creating too much resistance.
 - [I Ran Claude in a Loop for Three Months](https://ghuntley.com/cursed/) - Case study: Ralph built CURSED, a Gen Z slang-based programming language with LLVM compiler.
 - [Too Many Model Context Protocol Servers](https://ghuntley.com/allocations/) - Context allocation theory — Ralph minimizes allocation to avoid compaction events.
-- [Anthropic's Ralph Wiggum Plugin](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum) - Official Claude Code plugin using Stop Hook mechanism with `/ralph-loop` and `/ralph-cancel` commands.
 
 ## Playbooks & Methodology
 
