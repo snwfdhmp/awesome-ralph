@@ -13,18 +13,22 @@ while :; do cat PROMPT.md | claude-code ; done
 - Progress persists in files and git history, not in context
 - Each iteration starts fresh with clean context
 - Use "backpressure" (tests, lints, type checks) to validate work
-- Philosophy: *"Sit on the loop, not in it"*
+- Philosophy: *"Sit on the loop, not in it"* — or as Huntley puts it: *"deterministically bad in an undeterministic world"*
 
 ## Contents
 
 - [Official Resources](#official-resources)
+- [Playbooks & Methodology](#playbooks--methodology)
 - [Implementations](#implementations)
   - [Claude Code Plugins](#claude-code-plugins)
   - [Standalone Implementations](#standalone-implementations)
+  - [Tool-Specific Implementations](#tool-specific-implementations)
   - [Multi-Agent Systems](#multi-agent-systems)
 - [Tutorials & Guides](#tutorials--guides)
 - [Articles & Blog Posts](#articles--blog-posts)
-- [Podcasts & Videos](#podcasts--videos)
+- [Videos & Podcasts](#videos--podcasts)
+  - [Videos](#videos)
+  - [Podcasts](#podcasts)
 - [Community](#community)
   - [Hacker News Discussions](#hacker-news-discussions)
   - [Tools & Directories](#tools--directories)
@@ -33,47 +37,93 @@ while :; do cat PROMPT.md | claude-code ; done
 
 ## Official Resources
 
-- [Ralph](https://ghuntley.com/ralph/) - The original blog post by Geoffrey Huntley introducing the Ralph technique.
-- [Everything is a Ralph Loop](https://ghuntley.com/loop/) - Follow-up post exploring the philosophy and applications of the loop pattern.
-- [How to Ralph Wiggum](https://github.com/ghuntley/how-to-ralph-wiggum) - Official how-to repository with examples and best practices.
-- [Anthropic's Ralph Wiggum Plugin](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum) - Official Claude Code plugin from Anthropic.
+Primary sources from Geoffrey Huntley, the creator of the Ralph technique.
+
+- [Ralph Wiggum as a 'Software Engineer'](https://ghuntley.com/ralph/) - The definitive introduction. Explains the bash loop, "tuning like a guitar" metaphor, and the economics of autonomous coding.
+- [Everything is a Ralph Loop](https://ghuntley.com/loop/) - Deeper philosophical exploration covering "reverse mode" clean-rooming, orchestrator patterns, and "The Weaving Loom" concept.
+- [Don't Waste Your Back Pressure](https://ghuntley.com/pressure/) - Technical deep-dive on backpressure — the art of rejecting invalid generations without creating too much resistance.
+- [I Ran Claude in a Loop for Three Months](https://ghuntley.com/cursed/) - Case study: Ralph built CURSED, a Gen Z slang-based programming language with LLVM compiler.
+- [Too Many Model Context Protocol Servers](https://ghuntley.com/allocations/) - Context allocation theory — Ralph minimizes allocation to avoid compaction events.
+
+## Playbooks & Methodology
+
+Comprehensive implementation guides covering the **3 Phases, 2 Prompts, 1 Loop** workflow.
+
+- [How to Ralph Wiggum](https://github.com/ghuntley/how-to-ralph-wiggum) - Geoffrey Huntley's official playbook covering context management, sandboxing, and prompt patterns.
+- [ralph-playbook](https://github.com/ClaytonFarr/ralph-playbook) - Comprehensive methodology guide with diagrams, phase explanations, and "signs & gates" steering techniques.
+
+### The Core Workflow
+
+**Phase 1: Define Requirements** — Human + LLM conversation produces JTBD-aligned specifications
+**Phase 2: Planning Mode** — Gap analysis generates prioritized TODO list (no implementation)
+**Phase 3: Building Mode** — Implement from plan, run tests, commit, repeat
+
+### Essential File Structure
+
+```
+project-root/
+├── loop.sh                    # Ralph loop script
+├── PROMPT_build.md            # Build mode instructions
+├── PROMPT_plan.md             # Plan mode instructions
+├── AGENTS.md                  # Operational guide (~60 lines max)
+├── IMPLEMENTATION_PLAN.md     # Prioritized task list (generated)
+├── specs/                     # Requirement specs (one per JTBD)
+└── src/                       # Application source code
+```
 
 ## Implementations
 
 ### Claude Code Plugins
 
-- [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) - Claude Code implementation with intelligent exit detection for knowing when the PRD is complete.
+- [ralph-claude-code](https://github.com/frankbria/ralph-claude-code) - Claude Code with intelligent exit detection, rate limiting, circuit breaker, and semantic response analyzer.
 
 ### Standalone Implementations
 
-- [ralph](https://github.com/snarktank/ralph) - Autonomous AI agent loop for PRD completion with clean implementation.
-- [ralph](https://github.com/iannuttall/ralph) - Minimal file-based agent loop focusing on simplicity.
-- [ralph-playbook](https://github.com/ClaytonFarr/ralph-playbook) - Comprehensive guide and playbook for implementing Ralph loops effectively.
+- [ralph](https://github.com/snarktank/ralph) - PRD-driven task management with automatic branching, flowchart visualization, and auto-archiving.
+- [ralph](https://github.com/iannuttall/ralph) - Minimal file-based agent loop supporting codex/claude/droid/opencode.
+
+### Tool-Specific Implementations
+
+- [ralph-wiggum-cursor](https://github.com/agrimsingh/ralph-wiggum-cursor) - Cursor implementation with token tracking, context rotation at 80k tokens, and interactive setup.
+- [opencode-ralph-wiggum](https://github.com/Th0rgal/opencode-ralph-wiggum) - OpenCode implementation with real-time status display, mid-loop context injection, and struggle detection.
+- [ralph (GitHub Copilot)](https://github.com/aymenfurter/ralph) - VS Code extension with visual Control Panel, Progress Timeline, and Fresh Chat Mode.
+- [ralph-tui](https://github.com/subsy/ralph-tui) - Terminal UI orchestrator connecting to task trackers with interactive PRD creation.
+- [Goose Ralph Loop Tutorial](https://block.github.io/goose/docs/tutorials/ralph-loop/) - Block's Goose implementation with cross-model review and recipe-based workflows.
 
 ### Multi-Agent Systems
 
-- [ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) - Multi-backend support for running Ralph across different AI providers.
-- [ralph-loop-agent](https://github.com/vercel-labs/ralph-loop-agent) - Vercel's implementation for the AI SDK ecosystem.
+- [ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) - 7+ AI backends (Claude, Kiro, Gemini, Codex, Amp, Copilot, OpenCode), Hat System for personas, 20+ workflow presets.
+- [ralph-loop-agent](https://github.com/vercel-labs/ralph-loop-agent) - Vercel's TypeScript SDK wrapper with verification callbacks and context summarization.
 - [multi-agent-ralph-loop](https://github.com/alfredolopez80/multi-agent-ralph-loop) - Multi-agent orchestration for complex projects requiring parallel work streams.
 
 ## Tutorials & Guides
 
-- [11 Tips for AI Coding with Ralph Wiggum](https://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum) - Practical tips for getting the most out of Ralph loops.
-- [Running AI Coding Agents for Hours, Not Minutes](https://dev.to/sivarampg/the-ralph-wiggum-approach-running-ai-coding-agents-for-hours-not-minutes-57c1) - Guide on extending agent runtime with the Ralph approach.
+- [Getting Started with Ralph](https://www.aihero.dev/getting-started-with-ralph) - Step-by-step quickstart with Claude Code + Docker by Matt Pocock.
+- [11 Tips for AI Coding with Ralph Wiggum](https://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum) - AFK coding, HITL Ralph, iteration caps, and progress tracking.
+- [The Ralph Wiggum Approach](https://dev.to/sivarampg/the-ralph-wiggum-approach-running-ai-coding-agents-for-hours-not-minutes-57c1) - Stop hook mechanism, troubleshooting, and Q&A.
+- [The Real Ralph Wiggum Loop](https://thetrav.substack.com/p/the-real-ralph-wiggum-loop-what-everyone) - Clarifies original bash loop vs Anthropic plugin philosophy.
 - [Ralph Wiggum Guide](https://github.com/JeredBlu/guides/blob/main/Ralph_Wiggum_Guide.md) - Community-written comprehensive guide.
 - [Awesome Claude - Ralph Wiggum](https://awesomeclaude.ai/ralph-wiggum) - Resource page with additional tips and configuration examples.
 
 ## Articles & Blog Posts
 
 - [How Ralph Wiggum Went from The Simpsons to the Biggest Name in AI](https://venturebeat.com/technology/how-ralph-wiggum-went-from-the-simpsons-to-the-biggest-name-in-ai-right-now) - VentureBeat coverage on the cultural phenomenon.
-- [A Brief History of Ralph](https://www.humanlayer.dev/blog/brief-history-of-ralph) - Historical overview of the technique's development and adoption.
+- [A Brief History of Ralph](https://www.humanlayer.dev/blog/brief-history-of-ralph) - Comprehensive timeline including Y Combinator hackathon story.
 - [Ralph Wiggum and AI Coding Loops](https://www.ishir.com/blog/312751/ralph-wiggum-and-ai-coding-loops-from-springfield-to-real-world-software-automation.htm) - From Springfield to real-world software automation.
 - [Ralph Wiggum Explained: The Claude Code Loop That Keeps Going](https://blog.devgenius.io/ralph-wiggum-explained-the-claude-code-loop-that-keeps-going-3250dcc30809) - Technical explainer of how and why it works.
 - [2026: The Year of the Ralph Loop Agent](https://dev.to/alexandergekov/2026-the-year-of-the-ralph-loop-agent-1gkj) - Predictions and analysis of the Ralph loop's impact on development.
 
-## Podcasts & Videos
+## Videos & Podcasts
 
-- [Inventing the Ralph Wiggum Loop - Dev Interrupted](https://linearb.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop) - Podcast interview with Geoffrey Huntley discussing the origins and philosophy.
+### Videos
+
+- [Ralph Wiggum Deep Dive with Geoffrey Huntley](https://www.youtube.com/watch?v=SB6cO97tfiY) - The definitive video. Live coding demo, history, and comparison of bash-loop vs stop-hook implementations.
+- [AI That Works Podcast Episode](https://www.youtube.com/watch?v=fOPvAPdqgPo) - 75-minute deep dive on why Ralph works — context windows, control loops, and applications.
+- [Matt Pocock's Ralph Overview](https://www.youtube.com/watch?v=_IK18goX4X8) - Popular practical overview grounded in kanban and requirements discovery.
+
+### Podcasts
+
+- [Inventing the Ralph Wiggum Loop - Dev Interrupted](https://linearb.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop) - Geoffrey Huntley on context rot, compaction, and the $10.42/hour calculation.
 - [Inventing the Ralph Wiggum Loop (Transcript)](https://devinterrupted.substack.com/p/inventing-the-ralph-wiggum-loop-creator) - Full transcript of the Dev Interrupted episode.
 - [Ralph Wiggum Coding Agent Power Tools - BoundaryML](https://boundaryml.com/podcast/2025-10-28-ralph-wiggum-coding-agent-power-tools) - Deep dive into tooling and advanced techniques.
 - [Ralph Wiggum AI Agent Explained - Startup Ideas Podcast](https://www.podscan.fm/podcasts/the-startup-ideas-podcast/episodes/ralph-wiggum-ai-agent-explained-amp-how-to-use-it) - Accessible introduction for founders and builders.
@@ -82,6 +132,8 @@ while :; do cat PROMPT.md | claude-code ; done
 
 ### Hacker News Discussions
 
+- [We Put a Coding Agent in a While Loop](https://news.ycombinator.com/item?id=45005434) - Geoffrey Huntley participated; security concerns raised about default passwords.
+- [Ralph Wiggum as a Software Engineer](https://news.ycombinator.com/item?id=43817200) - Code quality critiques and maintainability debates.
 - [Original HN Discussion](https://news.ycombinator.com/item?id=44565028) - The discussion that helped popularize the technique.
 - [Tips Discussion](https://news.ycombinator.com/item?id=46547129) - Community tips and experiences thread.
 - [Ralph from First Principles (Video)](https://news.ycombinator.com/item?id=46587275) - Discussion around educational video content.
