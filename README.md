@@ -1,3 +1,9 @@
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/692be4b4-8bd9-4002-af29-9e65c5e6b61c" width="1000" alt="Ralph Wiggum AI Coding method">
+</p>
+
+
 # Awesome Ralph [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated list of resources about Ralph (aka Ralph Wiggum), the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.
