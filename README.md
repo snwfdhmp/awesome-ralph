@@ -91,9 +91,10 @@ project-root/
 
 ### Standalone Implementations
 
-- [ralph](https://github.com/snarktank/ralph) - PRD-driven task management with automatic branching, flowchart visualization, and auto-archiving.
-- [ralph](https://github.com/iannuttall/ralph) - Minimal file-based agent loop supporting codex/claude/droid/opencode.
+- [snartank/ralph](https://github.com/snarktank/ralph) - PRD-driven task management with automatic branching, flowchart visualization, and auto-archiving.
+- [iannuttall/ralph](https://github.com/iannuttall/ralph) - Minimal file-based agent loop supporting codex/claude/droid/opencode.
 - [smart-ralph](https://github.com/tzachbon/smart-ralph) - Spec-driven development workflow. Transforms feature requests into structured specs (research, requirements, design, tasks) then executes them task-by-task autonomously.
+- [ralph-wiggum-bdd](https://github.com/marcindulak/ralph-wiggum-bdd) - A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop.
 
 ### Tool-Specific Implementations
 
