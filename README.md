@@ -93,7 +93,7 @@ project-root/
 
 - [ralph](https://github.com/snarktank/ralph) - PRD-driven task management with automatic branching, flowchart visualization, and auto-archiving.
 - [ralph](https://github.com/iannuttall/ralph) - Minimal file-based agent loop supporting codex/claude/droid/opencode.
-- [ralph-specum](https://github.com/snwfdhmp/ralph) - Spec-driven development workflow. Transforms feature requests into structured specs (research, requirements, design, tasks) then executes them task-by-task autonomously.
+- [smart-ralph](https://github.com/tzachbon/smart-ralph) - Spec-driven development workflow. Transforms feature requests into structured specs (research, requirements, design, tasks) then executes them task-by-task autonomously.
 
 ### Tool-Specific Implementations
 
