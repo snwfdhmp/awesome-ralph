@@ -93,6 +93,7 @@ project-root/
 
 - [ralph](https://github.com/snarktank/ralph) - PRD-driven task management with automatic branching, flowchart visualization, and auto-archiving.
 - [ralph](https://github.com/iannuttall/ralph) - Minimal file-based agent loop supporting codex/claude/droid/opencode.
+- [ralph-wiggum-bdd](https://github.com/marcindulak/ralph-wiggum-bdd) - A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop.
 
 ### Tool-Specific Implementations
 
