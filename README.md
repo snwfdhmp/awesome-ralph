@@ -96,6 +96,7 @@ project-root/
 - [iannuttall/ralph](https://github.com/iannuttall/ralph) - Minimal file-based agent loop supporting codex/claude/droid/opencode.
 - [smart-ralph](https://github.com/tzachbon/smart-ralph) - Spec-driven development workflow. Transforms feature requests into structured specs (research, requirements, design, tasks) then executes them task-by-task autonomously.
 - [ralph-wiggum-bdd](https://github.com/marcindulak/ralph-wiggum-bdd) - A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop.
+- [ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) - Rust orchestrator with 7 AI backends, Hat System for specialized personas, and interactive TUI mode.
 
 ### Tool-Specific Implementations
 
@@ -107,7 +108,6 @@ project-root/
 
 ### Multi-Agent Systems
 
-- [ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) - 7+ AI backends (Claude, Kiro, Gemini, Codex, Amp, Copilot, OpenCode), Hat System for personas, 20+ workflow presets.
 - [ralph-loop-agent](https://github.com/vercel-labs/ralph-loop-agent) - Vercel's TypeScript SDK wrapper with verification callbacks and context summarization.
 - [multi-agent-ralph-loop](https://github.com/alfredolopez80/multi-agent-ralph-loop) - Multi-agent orchestration for complex projects requiring parallel work streams.
 
