@@ -98,6 +98,7 @@ project-root/
 - [ralph-wiggum-bdd](https://github.com/marcindulak/ralph-wiggum-bdd) - A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop.
 - [ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) - Rust orchestrator with 7 AI backends, Hat System for specialized personas, and interactive TUI mode.
 - [nitodeco/ralph](https://github.com/nitodeco/ralph) - CLI orchestration tool for PRD-driven development with sequential task execution and interactive terminal UI.
+- [pentoai/ml-ralph](https://github.com/pentoai/ml-ralph) - Autonomous ML agent for running experiments using Claude or Codex.
 
 ### Tool-Specific Implementations
 
