@@ -114,6 +114,7 @@ project-root/
 
 - [ralph-loop-agent](https://github.com/vercel-labs/ralph-loop-agent) - Vercel's TypeScript SDK wrapper with verification callbacks and context summarization.
 - [multi-agent-ralph-loop](https://github.com/alfredolopez80/multi-agent-ralph-loop) - Multi-agent orchestration for complex projects requiring parallel work streams.
+- [Bernstein](https://github.com/chernistry/bernstein) - Multi-agent orchestrator with automated loops — spawns parallel coding agents, verifies with tests, self-evolves. Supports headless CI for overnight runs.
 
 ## Tutorials & Guides
 
