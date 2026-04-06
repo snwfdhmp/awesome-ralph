@@ -25,6 +25,7 @@ while :; do cat PROMPT.md | claude-code ; done
 
 > **Found this useful? ⭐️ Like this repo to help others discover it**
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for Claude Code multi-agent orchestration with automated task delegation and quality gates. MIT licensed.
 ## Contents
 
 - [Official Resources](#official-resources)
