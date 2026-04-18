@@ -98,6 +98,7 @@ project-root/
 - [smart-ralph](https://github.com/tzachbon/smart-ralph) - Spec-driven development workflow. Transforms feature requests into structured specs (research, requirements, design, tasks) then executes them task-by-task autonomously.
 - [ralph-wiggum-bdd](https://github.com/marcindulak/ralph-wiggum-bdd) - A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop.
 - [ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) - Rust orchestrator with 7 AI backends, Hat System for specialized personas, and interactive TUI mode.
+- [dex](https://github.com/francescoalemanno/dex) - Rust orchestrator with plan -> implement -> parallel review workflow, compatible with the most popular CLIs, also has autoresearch.
 - [nitodeco/ralph](https://github.com/nitodeco/ralph) - CLI orchestration tool for PRD-driven development with sequential task execution and interactive terminal UI.
 - [pentoai/ml-ralph](https://github.com/pentoai/ml-ralph) - Autonomous ML agent for running experiments using Claude or Codex.
 - [oh-my-ralph](https://github.com/vivganes/oh-my-ralph) - Opinionated Ralph Wiggum loop implemented in Python.
