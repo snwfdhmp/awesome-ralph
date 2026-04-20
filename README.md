@@ -93,6 +93,7 @@ project-root/
 ### Standalone Implementations
 
 - [ralph-starter](https://github.com/rubenmarcus/ralph-starter) - CLI with integrations for GitHub, Linear, and Notion; supports multiple agents, interactive wizard, workflow presets, and cost tracking.
+- [ralph-kit](https://github.com/develo-pera/ralph-kit) - CLI with conversational project definition, local Kanban dashboard, and loop runner that auto-detects project layout and works with any Ralph Loop implementation (built-in, frankbria, snarktank).
 - [snartank/ralph](https://github.com/snarktank/ralph) - PRD-driven task management with automatic branching, flowchart visualization, and auto-archiving.
 - [iannuttall/ralph](https://github.com/iannuttall/ralph) - Minimal file-based agent loop supporting codex/claude/droid/opencode.
 - [smart-ralph](https://github.com/tzachbon/smart-ralph) - Spec-driven development workflow. Transforms feature requests into structured specs (research, requirements, design, tasks) then executes them task-by-task autonomously.
