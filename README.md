@@ -170,6 +170,8 @@ project-root/
 
 ## Related Tools
 
+- [MartinLoop](https://github.com/Keesan12/Martin-Loop) - Open-source governed runtime for Ralph-style AI coding loops. Adds hard budget caps, max iteration limits, verifier gates, rollback evidence, explicit stop reasons, and JSONL run records around autonomous coding workflows.
+
 - [Advanced Context Engineering for Coding Agents](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents) - Techniques for optimizing context windows and prompts for autonomous agents.
 
 ## Support
