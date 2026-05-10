@@ -170,6 +170,7 @@ project-root/
 
 ## Related Tools
 
+- [agenttrace](https://github.com/luoyuctl/agenttrace) - Open-source local TUI for AI coding-agent session observability across local logs, including cost, tokens, latency, tool failures, diffs, reports, and CI health gates.
 - [Advanced Context Engineering for Coding Agents](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents) - Techniques for optimizing context windows and prompts for autonomous agents.
 
 ## Support
