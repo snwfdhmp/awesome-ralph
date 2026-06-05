@@ -171,6 +171,7 @@ project-root/
 ## Related Tools
 
 - [Advanced Context Engineering for Coding Agents](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents) - Techniques for optimizing context windows and prompts for autonomous agents.
+- [MartinLoop](https://github.com/Keesan12/martin-loop) - Open-source control layer for Ralph-style coding loops with hard budget caps, verifier gates, explicit stop reasons, and JSONL run records around unattended agent runs.
 
 ## Support
 
