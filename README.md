@@ -101,6 +101,7 @@ project-root/
 - [nitodeco/ralph](https://github.com/nitodeco/ralph) - CLI orchestration tool for PRD-driven development with sequential task execution and interactive terminal UI.
 - [pentoai/ml-ralph](https://github.com/pentoai/ml-ralph) - Autonomous ML agent for running experiments using Claude or Codex.
 - [oh-my-ralph](https://github.com/vivganes/oh-my-ralph) - Opinionated Ralph Wiggum loop implemented in Python.
+- [Ariadne Loop](https://github.com/zhangzeyu99-web/ariadne-loop) - Loop Engineering CLI and workbench for verifiable AI coding-agent loop specs, backpressure gates, handoff packets, and JSON reports.
 
 ### Tool-Specific Implementations
 
