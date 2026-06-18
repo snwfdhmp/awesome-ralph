@@ -170,6 +170,7 @@ project-root/
 
 ## Related Tools
 
+- [MartinLoop](https://github.com/Keesan12/martin-loop) - Open-source control plane for AI coding agents with hard budget stops, verifier gates, rollback evidence, compact run receipts, and inspectable audit records for autonomous loop workflows.
 - [Advanced Context Engineering for Coding Agents](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents) - Techniques for optimizing context windows and prompts for autonomous agents.
 
 ## Support
