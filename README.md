@@ -109,6 +109,7 @@ project-root/
 - [ralph (GitHub Copilot)](https://github.com/aymenfurter/ralph) - VS Code extension with visual Control Panel, Progress Timeline, and Fresh Chat Mode.
 - [ralph-tui](https://github.com/subsy/ralph-tui) - Terminal UI orchestrator connecting to task trackers with interactive PRD creation.
 - [Goose Ralph Loop Tutorial](https://block.github.io/goose/docs/tutorials/ralph-loop/) - Block's Goose implementation with cross-model review and recipe-based workflows.
+- [neuralyzer](https://github.com/gintasz/neuralyzer) - Allow agent to wipe its own session context and re-run the first message. Easier and more ergonomic Ralph loop engineering.
 
 ### Multi-Agent Systems
 
