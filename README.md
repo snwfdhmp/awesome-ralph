@@ -101,6 +101,7 @@ project-root/
 - [nitodeco/ralph](https://github.com/nitodeco/ralph) - CLI orchestration tool for PRD-driven development with sequential task execution and interactive terminal UI.
 - [pentoai/ml-ralph](https://github.com/pentoai/ml-ralph) - Autonomous ML agent for running experiments using Claude or Codex.
 - [oh-my-ralph](https://github.com/vivganes/oh-my-ralph) - Opinionated Ralph Wiggum loop implemented in Python.
+- [LoopTroop](https://github.com/looptroop-ai/LoopTroop) - Local, open-source GUI that runs OpenCode agents in a Ralph loop: on failure it logs the trace, resets the git worktree, and retries from clean context until the spec passes. An LLM council plans the work first and human approval gates sign off the result.
 
 ### Tool-Specific Implementations
 
