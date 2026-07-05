@@ -150,6 +150,7 @@ project-root/
 
 ## Community
 
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — Personal Context Artifacts: 4 Markdown templates (wiki, mental-models, voice, protocols) + 5 Claude Code skills. Solves context amnesia — every session starts context-full. MIT, one-command install.
 ### Hacker News Discussions
 
 - [We Put a Coding Agent in a While Loop](https://news.ycombinator.com/item?id=45005434) - Geoffrey Huntley participated; security concerns raised about default passwords.
