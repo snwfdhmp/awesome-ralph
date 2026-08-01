@@ -171,6 +171,7 @@ project-root/
 ## Related Tools
 
 - [Advanced Context Engineering for Coding Agents](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents) - Techniques for optimizing context windows and prompts for autonomous agents.
+- [Plumb](https://github.com/manpreet171/plumb) - Checks the agent's summary against the actual git diff after a run and reports what the summary left out: unmentioned file changes, removed guards, silenced tests. Zero dependencies.
 
 ## Support
 
