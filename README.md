@@ -162,6 +162,7 @@ project-root/
 ### Tools & Directories
 
 - [Vibe Coding - Ralph Wiggum Loop](https://vibecoding.app/tools/ralph-wiggum-loop) - Tool directory entry with quick-start resources.
+- [Pixel Pet](https://letmethink.cc/app/pixel-pet/) - Turn a personality description into a deterministic ASCII pixel companion in the browser.
 
 ### Ralph Communities
 
