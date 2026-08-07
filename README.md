@@ -171,6 +171,7 @@ project-root/
 ## Related Tools
 
 - [Advanced Context Engineering for Coding Agents](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents) - Techniques for optimizing context windows and prompts for autonomous agents.
+- [cowork-to-code-bridge](https://github.com/abhinaykrupa/cowork-to-code-bridge) - Run an unattended loop's tasks on your own machine from a sandboxed caller, with queue expiry, process-group cancellation and idempotency keys.
 
 ## Support
 
