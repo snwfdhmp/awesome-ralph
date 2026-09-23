@@ -171,6 +171,7 @@ project-root/
 ## Related Tools
 
 - [Advanced Context Engineering for Coding Agents](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents) - Techniques for optimizing context windows and prompts for autonomous agents.
+- [antiburn](https://github.com/antiburn/antiburn) - Free, local desktop app that checks coding agent sessions for common causes of token burn, such as sessions that run too deep, overpowered subagents, broken caching, and unused MCP servers, skills, and tools. Supports Claude Code, Codex, Cursor, OpenCode, Pi, and more.
 
 ## Support
 
