@@ -101,6 +101,7 @@ project-root/
 - [nitodeco/ralph](https://github.com/nitodeco/ralph) - CLI orchestration tool for PRD-driven development with sequential task execution and interactive terminal UI.
 - [pentoai/ml-ralph](https://github.com/pentoai/ml-ralph) - Autonomous ML agent for running experiments using Claude or Codex.
 - [oh-my-ralph](https://github.com/vivganes/oh-my-ralph) - Opinionated Ralph Wiggum loop implemented in Python.
+- [ralph-harness](https://github.com/vkuprin/ralph-harness) - Claude Code loop that runs for days, where git, a verify command and a read-only reviewer decide which commits are kept; one worktree and pull request per loop, live steering, Homebrew and npm installs.
 
 ### Tool-Specific Implementations
 
