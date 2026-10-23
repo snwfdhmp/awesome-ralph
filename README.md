@@ -132,6 +132,7 @@ project-root/
 - [Ralph Wiggum and AI Coding Loops](https://www.ishir.com/blog/312751/ralph-wiggum-and-ai-coding-loops-from-springfield-to-real-world-software-automation.htm) - From Springfield to real-world software automation.
 - [Ralph Wiggum Explained: The Claude Code Loop That Keeps Going](https://blog.devgenius.io/ralph-wiggum-explained-the-claude-code-loop-that-keeps-going-3250dcc30809) - Technical explainer of how and why it works.
 - [2026: The Year of the Ralph Loop Agent](https://dev.to/alexandergekov/2026-the-year-of-the-ralph-loop-agent-1gkj) - Predictions and analysis of the Ralph loop's impact on development.
+- [The Nightly Ralph Loop](https://cloudwired.dev/notes/the-nightly-ralph-loop) - Two weeks of running a Ralph loop unattended on a real backlog, with the guardrails and the numbers.
 
 ## Videos & Podcasts
 
