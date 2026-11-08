@@ -171,6 +171,7 @@ project-root/
 ## Related Tools
 
 - [Advanced Context Engineering for Coding Agents](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents) - Techniques for optimizing context windows and prompts for autonomous agents.
+- [Autohand Code CLI](https://github.com/autohandai/code-cli) - Self-evolving autonomous coding agent for the terminal with 40+ tools, multi-LLM support, and a modular skills system. Can be used as the agent in a Ralph loop.
 
 ## Support
 
