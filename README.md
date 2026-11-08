@@ -117,7 +117,7 @@ Agent-agnostic loop runners.
 - [ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) - Rust orchestrator with 7 AI backends, a Hat System for specialized personas, and an interactive TUI.
 - [chief](https://github.com/MiniCodeMonkey/chief) - Splits work into tasks and runs Claude Code in a fresh-context loop until they are done.
 - [ralph-starter](https://github.com/rubenmarcus/ralph-starter) - CLI with GitHub, Linear, and Notion integrations, multiple agents, workflow presets, and cost tracking.
-- [PageAI-Pro/ralph-loop](https://github.com/PageAI-Pro/ralph-loop) - npm-packaged long-running loop over a task list.
+- [PageAI-Pro/ralph-loop](https://github.com/PageAI-Pro/ralph-loop) - Long-running loop over a task list, packaged for npm.
 - [fstandhartinger/ralph-wiggum](https://github.com/fstandhartinger/ralph-wiggum) - Spec-driven Ralph setup distributed as an agent skill that the agent installs itself.
 - [smart-ralph](https://github.com/tzachbon/smart-ralph) - Turns feature requests into research, requirements, design, and task specs, then executes them task by task.
 - [loop.js](https://github.com/loop-js/loop.js) - Fresh-context loop with a separate read-only Verify agent that decides when to stop.
