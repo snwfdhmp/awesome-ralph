@@ -284,6 +284,7 @@ Hacker News threads.
 - [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code#readme) - Skills, hooks, slash commands, and plugins for Claude Code.
 - [Awesome Harness Engineering](https://github.com/walkinglabs/awesome-harness-engineering#readme) - Harnesses, loops, and environments for AI agents.
 - [Awesome Claude: Ralph Wiggum](https://awesomeclaude.ai/ralph-wiggum) - Reference page with tips and configuration examples.
+- [Awesome Software Factories](https://github.com/varun1505/awesome-software-factories#readme) - Systems that run coding agents unattended, with a section on autonomous loops and Ralph runners.
 
 ## Contributing
 
